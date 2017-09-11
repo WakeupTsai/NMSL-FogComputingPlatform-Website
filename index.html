@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Home » Fog Computing Platform</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+		});
+	</script>
+
+	<style>
+	a:visited {
+	    color: pink;
+	}
+	</style>
+
+
+
+</head>
+<body>
+	<div id="header"></div>
+	<div id="contents">
+		<div id="post" class="clearfix">
+        <h1>
+            <b>Fog Computing for Distributed Applicaitons</b>
+        </h1>
+				<!--
+				<div>
+            <p>
+						Cloud computing has become mature in the past decade, and enabled many new applications, such as remote collaboration, file backup, online office suites, and cloud gaming. These cloud applications are executed in a distributed manner, and dictate efficient management stacks, such as <a href="https://www.openstack.org/">OpenStack</a>, <a href="https://saltstack.com/">SaltStack</a>, and <a href="http://kubernetes.io/">Kubernetes</a>, in which a master oversees all the operations, while one or multiple minions carry out the actual workload. The master and minions may be deployed on physical machines or in virtual machines (VMs). Conventional cloud computing deploys masters and minions in data centers, for elasticity, flexibility, reliability, security, and cost-effectiveness. Such a deployment approach, however, is not suitable to distributed multimedia applications, which: (i) incur stringent realtime constraints and (ii) demand tremendous amounts of resources. For example, cloud gaming services impose stringent realtime constraints. In particular, it has to finish several jobs in extremely short time, including: (i) receiving and processing client inputs on game servers, (ii) encoding and transmitting the captured video frames from game servers to clients, and (iii) receiving decoding, and rendering video frames on clients’ displays. Another example is animation rendering, which needs large amounts of resources. Animation rendering dictates: (i) high-speed CPU/GPU for rendering and (ii) large disk space for storage. Hosting these multimedia applications in the cloud is not ideal, because minions hiding in data centers are too far away from users and are vulnerable to insufficient bandwidth, long latency, and network outage. Furthermore, cloud providers often ask for higher rates on heavier (multimedia) users.
+						</br></br>
+						Fog computing was recently proposed by the networking community, for Internet-of-Thing (IoT) applications. Fog computing extends cloud computing from data centers towards the edge networks, so as to achieve: (i) low latency, (ii) location awareness, (iii) scalability, and (iv) heterogeneity, which are crucial to multimedia applications. That is, minions can now be hosted on less-powerful networking devices and dedicated machines in edge networks for better realtimeness. The definition of fog computing was further generalized, in which minions are pushed to heterogeneous end devices owned by general publics. That is, end users, or the crowds, are somehow incentivized to share their storage and processing resources to run minions for basic network functionality or novel applications. Outsourcing minion workload to general publics is one kind of crowdsourcing, which has a potential for fog service providers to resell, otherwise idling resources at lower costs. Fig. 1 summarizes the resulting fog computing platform, in which we refer to the minions in data centers as controlled minions, the minions in edge networks as semi-controlled minions, and the minions on end devices as freelance minions.
+						</br></br>
+						In this project, we envision an even more general fog computing model, where all minions leverage four resources: communications, computations, storages, and sensors, for next-generation distributed multimedia applications. In the fog computing platform, fog users publish their applications to the fog computing platform. The fog provider distributes these applications to minions. Managing minions in the fog computing platform is more difficult than doing that in the cloud computing platform, which reduces the cloud computing optimization solution in applicable to fog computing platform. Indeed, wide spectrum of challenges must be addressed before realizing distributed applications in fog computing platforms, including resource discovery, network QoS, user QoE, network/device heterogeneity, resource allocation, management, reliability, programmability, and accountability. Hence, there is a huge room for optimizing fog computing platforms, and we have addressed several research problems in this project. In particular, we addressed three challenges in the past year.
+						</p>
+				</div>
+			-->
+
+        <div>
+            <p>
+						In cloud computing, minions refer to virtual or physical machines that have lot of computing,
+						memory and data resources. Minions carry out the actual workloads. Minions in the cloud usually
+						hide in far-away data centers, which are vulnerable to insufficient bandwidth, long latency,
+						and high product cost rate. Hence, cloud computing is less friendly to multimedia applications
+						or the applications in intermittent Internet. Recently, fog computing paradigm pushes minions
+						toward edge networks. We adopt a generalized definition, which minions may be owned by the crowds.
+						Such fog paradigm provides the resources closer to the users and reduces the cost.
+						Unfortunately, managing the minions in the fog is challenging, e.g., end devices may move into wireless
+						dead-zones, run out of battery, or be turned off. These factors lead to severe uncertainty. In this project
+						, we carefully solve five major problems:
+						</p>
+						<ol class='a'>
+								<li class='a'><span style="color: #0098cc">Using virtualization</span> to split each application into maller modules, then <span style="color: #0098cc">dynamically deploy</span> them on devices which have enough resources</li>
+								<li class='a'><span style="color: #0098cc">Integrate multiple devices</span> of limited computing resources which are in the edge network for complex data analysis</li>
+								<li class='a'><span style="color: #0098cc">Predicting the completion time</span> of jobs by machine learning approaches, in order to design an optimal <span style="color: #0098cc">jobs distribution algorithm<span></li>
+								<li class='a'><span style="color: #0098cc">Build system models</span> based on diverse QoS levels and heterogeneous devices to facilitate the optimal deployment decisions for maximizing the number of satisfied jobs</li>
+								<li class='a'><span style="color: #0098cc">Providing flexible network connectivity</span> to allow crowds sharing contents in challenged networks</li>
+						</ol>
+						<p>
+						Our research is  fruitful in all five directions, leading to publications in prestigious journals (such as IEEE Transactions on Multimedia) and top conferences (such as IEEE CloudCom).
+            </p>
+						<div>
+							<iframe style="margin-left: 20px;" src="https://drive.google.com/file/d/0B_oeylo4xEsYcnd0ek9wTnhaem8/preview" width="500" height="300"></iframe>
+							<iframe style="margin-left: 20px;" src="https://drive.google.com/file/d/0B-kOkq4RwO3DaFlacDJPRmthdXc/preview" width="500" height="300"></iframe>
+						</div>
+        </div>
+		</div>
+	</div>
+
+
+	<div id="footer"></div>
+</body>
+</html>

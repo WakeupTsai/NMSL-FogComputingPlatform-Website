@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+ 	<title>Networking and Multimedia Systems Lab</title>   
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="header">
+		<div>
+			<div class="logo">
+				<a href="index.html">NMSL@NTHU</a>
+			</div>
+			<ul id="navigation">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+                <li>
+                    <a href="research.html">Research</a>
+                </li>
+				<li>
+					<a href="document.html">Document</a>
+				</li>
+				<li class="active">
+					<a href="download.html">Download</a>
+				</li>
+				<li>
+					<a href="faq.html">FAQ</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+    <div id="contents">
+        <h1>
+            <b>360° Video Viewing Dataset</b>
+        </h1>
+        <p style="margin: 0px;">
+        This <a href="https://nmsl.cs.nthu.edu.tw/dropbox/360dataset.zip">dataset</a> consists of the content (10 videos from YouTube) and sensory data (50 subjects) of 360-degree videos to HMD.
+            <ul>
+                The folder information:
+                <li><b>Saliency</b>: contains the videos with the saliency map of each frame based on <a href="https://arxiv.org/abs/1609.01064">Cornia's work</a>, where the saliency maps indicate the attraction level of the original video frame.</li>
+
+                <li><b>Motion</b>: contains the videos with the optical flow analyzed from each consecutive frames, where the optical flow indicates the relative motions between the objects in 360-degree videos and the viewer.</li>
+
+                <li><b>Raw</b>: contains the raw sensing data (raw x, raw y, raw z, raw yaw, raw roll, and raw pitch) with timestamps captured when the viewers are watching 360-degree videos using <a href="https://github.com/opentrack/opentrack">OpenTrack</a>.</li>
+
+                <li><b>Orientation</b>: contains the orientation data (raw x, raw y, raw z, raw yaw, raw roll, and raw pitch), which have been aligned with the time of each frame of the video. The calibrated orientation data (cal. yaw, cal. pitch, and cal. roll) are provided as well.</li>
+
+                <li><b>Tile</b>: contains the tile numbers overlapped with the Field-of-View (FoV) of the viewer according to the orientation data, where the tile size is 192x192. Knowing the tiles that are overlapped with the FoV of the viewer is useful for optimizing 360-degree video to HMD streaming system, for example, the system can only stream those tiles to reduce the required bandwidth or allocate higher bitrate to those tiles for better user experience.</li>
+            </ul>
+        </p>
+
+        <hr></hr>
+        <br></br>
+
+        <h1>
+            <b>External links</b>
+        </h1>
+        <p style="margin: 0px;">
+            <ul>
+                <li><a href="https://github.com/opentrack/opentrack">OpenTrack</a>, head tracking software for MS Windows, Linux, and Apple OSX</li>
+                <li><a href="https://github.com/ultravideo/kvazaar">Kvazaar</a>, an open-source HEVC encoder</li>
+                <li><a href="https://gpac.wp.imt.fr/player/">MP4Client</a>, a highly configurable multimedia player available in many flavors (command-line, GUI and browser plugins)</li>
+                <li><a href="https://gpac.wp.imt.fr/mp4box/">MP4Box</a>, a multimedia packager which can be used for performing many manipulations on multimedia files like AVI, MPG, TS, but mostly on ISO media files</li>
+                <li><a href="https://github.com/facebook/transform360">Facebook Transform360</a>, a video filter that transforms 360 video in equirectangular projection into a cubemap projection</li>
+                <li><a href="https://github.com/xmar/360Transformations">xmar/360Transformations</a>, a tool which takes any 360-degree video in input and outputs another 360-degree video, which is mapped into another geometric projections (currently available mappings are equirectangular, cube map, rhombic dodecahedron, and pyramid)</li>
+                <li><a href="https://www.oculus.com/experiences/rift/926562347437041/">Oculus Video</a>, the official Video app from Oculus</li>
+                <li><a href="http://gaminganywhere.org/index.html">GamingAnywhere</a>, an open-source clouding gaming platform</li>
+                <li><a href="https://keras.io/">Keras</a>, a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano</li>
+                <li><a href="http://dl.acm.org/citation.cfm?id=1623280">Lucas-Kanade optical flow</a>, the relative motions between the objects in 360° videos and the viewers</li>
+                <li><a href="http://ieeexplore.ieee.org/document/7328056/">V-PSNR</a>, the Peak Signal-to-Noise Ratio (PSNR) for the viewer FoV (instead of the whole 360° video)</li>
+                <li><a href="http://ieeexplore.ieee.org/document/7328056/">S-PSNR</a>, a spherical PSNR, to summarize the average quality over all possible viewports</li>
+            </ul>
+        </p>
+    </div>
+
+    <div id="footer" align="center">
+        <p style="margin-bottom: 0px">
+        © 2017 NMSL@NTHU. All Rights Reserved.
+        </p>
+    </div>
+</body>
+</html>

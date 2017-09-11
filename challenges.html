@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Challenges » Fog Computing Platform</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    });
+  </script>
+</head>
+<body>
+  <div id="header"></div>
+  <div id="contents">
+
+    <div class="post-container">
+        <div class="post-thumb-left"><img src="images/heterogeneous_devices.png" style="width:200px;height:200px;" /></div>
+        <div class="post-content-left">
+            <h3 class="post-title">Heterogeneous devices</h3>
+            <p>
+            There are many kinds of fog devices, such as desktops, laptops, and smartphones owned by different fog workers, resulting in high heterogeneity. Implementing the fog computing platform that supports heterogeneous devices is challenging, because the actual configurations of the devices and inter-connected networks need to be carefully optimized. Furthermore, edge devices usually have limited resources, we have to split applications into smaller modules running on the devices. Let them collaborate among one another to fulfill the job.
+            </p>
+        </div>
+    </div>
+
+    <div class="post-container">
+        <div class="post-thumb-right"><img src="images/large_amount_of_data.png" style="width:200px;height:200px;" /></div>
+        <div class="post-content-right">
+            <h3 class="post-title">Large amount of data</h3>
+            <p>
+            When the number of IoT devices is getting higher, the amount of data is also getting larger and larger. Because IoT devices usually have limited resources, sensor data tend to be sent to powerful data centers for processing. Sending large sensor data to the data centers may congest the networks and overload the data centers. To solve this problem, collaborating several IoT devices and pre-processing the data before transmitting them over the Internet are the keys. Therefore, how to analyze those sensor data and extract useful information is critical. Nowadays, such large amount of data is usually analyzed by Machine Learning (ML) approach, especially using Deep Learning (DL). However, DL is too complicated for a single IoT device. Hence, a platform supporting distributed analytics is required to solve the aforementioned issues.
+            </p>
+        </div>
+    </div>
+
+    <div class="post-container">
+        <div class="post-thumb-left"><img src="images/uncertainty_of_edge_devices.jpg" style="width:200px;height:200px;" /></div>
+        <div class="post-content-left">
+            <h3 class="post-title">Uncertainty of edge devices</h3>
+            <p>
+            Certain applications, such like animation rendering, require: (i) high computational power , (ii) large storage space for rendering inputs and results, (iii) well-connected communication channels for distributing jobs and collecting results, and (iv) on-device sensors to monitor resource utilization. Although our fog computing platform offers all these resources, fog devices are not fully controlled/owned by fog providers, which leads to high uncertainty and heterogeneity. For example, a laptop may be turned off, run out of batteries, or get into wireless dead-zone at any time, which leads to uncertainty. To cope with this problem, we have to predict the completion time and available resources, in order to schedule the jobs from fog users to fog devices/workers.
+            </p>
+        </div>
+    </div>
+
+    <div class="post-container">
+        <div class="post-thumb-right"><img src="images/different_QoS_of_requests.png" style="width:200px;height:200px;" /></div>
+        <div class="post-content-right">
+            <h3 class="post-title">Different QoS of requests</h3>
+            <p>
+            To optimize a fog computing platform for supporting IoT analytics. Several challenges need to be carefully addressed. First, matching resource requirements with the available resources of fog devices is inherently computationally expensive. Moreover, the fog platform is shared by multiple IoT analytics with different target QoS levels, which also affect the resource requirements. Second, fog devices are heterogeneous, and may not be powerful enough to run a complex analytics application. We adopt graph processing as the programming model to build multi-operator IoT analytics. We solve the two challenges in the following solution. An efficient deployment algorithm for IoT analytics is developed to maximize the number of satisfied IoT analytics requests. The algorithm takes: (i) network bandwidth constraints, (ii) virtualization overhead, and (iii) required resource models into considerations. Our algorithm, tailored to address the challenges, is more general than the ones in earlier work.
+            </p>
+        </div>
+    </div>
+
+    <div class="post-container">
+
+      <div class="post-thumb-left"><img src="images/intermittent_networks.png" style="width:200px;height:200px;" /></div>
+        <div class="post-content-left">
+            <h3 class="post-title">Intermittent networks</h3>
+            <p>
+              We envision a distributed system, in which users gather the contents through ad-hoc networks and local proxies when they have Internet access. They later consume the content when the Internet access is not available. However, distributing contents among different users affects the tasks completion ratio. For example, distributing a popular multimedia content to the users who run into many other users results in higher task completion ratios. Hence, we solve the difficult problem of making an optimal content distribution plan for high dissemination efficiency.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+  </div>
+  <div id="footer"></div>
+</body>
+</html>

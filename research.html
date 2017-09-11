@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Research » Fog Computing Platform</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+		});
+	</script>
+</head>
+<body>
+	<div id="header"></div>
+	<div id="contents">
+        <h1>
+            <b>Research Activities</b>
+        </h1>
+					<div class="post">
+						<div class="date">
+							<p>
+								<span>12</span>
+								2017
+							</p>
+						</div>
+            <h3>Supporting Internet-of-Things Analytics in a Fog Computing Platform<span class="author">by H. Hong, P. Tsai, A. Cheng, and C. Hsu</span></h3>
+            <p style="margin: 0px;">
+                Modern IoT analytics are computational and data
+								intensive. Existing analytics are mostly hosted in cloud data centers,
+								and may suffer from high latency, network congestion, and
+								privacy issues. In this paper, we design, implement, and evaluate
+								a fog computing platform that runs analytics in a distributed
+								way on multiple devices, including IoT devices, edge servers,
+								and data-center servers. We focus on the core optimization
+								problem: making deployment decisions to maximize the number
+								of satisfied IoT analytics. We carefully formulate the deployment
+								problem and design an efficient algorithm, named SSE, to solve
+								it. Moreover, we conduct a detailed measurement study to derive
+								system models of the IoT analytics based on diverse QoS levels
+								and heterogeneous devices to facilitate the optimal deployment
+								decisions. We implement a testbed to conduct experiments, which
+								show that the system models achieve reasonably good accuracy.
+								More importantly, 100% of the deployed IoT analytics satisfy the
+								QoS targets. We also conduct extensive simulations for largerscale
+								scenarios. The simulation results reveal that our SSE algorithm
+								outperforms a state-of-the-art algorithm by up to 89.4%
+								and 168.3% in terms of the number of satisfied IoT analytics
+								and active devices. In addition, our SSE algorithm reduces CPU,
+								RAM, and network resource consumptions by 18.4%, 12.7%, and
+								898.3%, respectively, and terminates in polynomial time.
+						</p>
+					<br></br>
+				</div>
+
+        <hr></hr>
+        <br></br>
+        <div class="post">
+            <div class="date">
+                <p>
+                <span>09</span>
+                2017
+                </p>
+            </div>
+            <h3>Distributed Analytics in Fog Computing Platforms Using Tensorflow and Kubernetes<span class="author">by	P. Tsai, H. Hong, A. Cheng, and C. Hsu</span></h3>
+            <p style="margin: 0px;">
+            Modern Internet-of-Things (IoT) applications pro- duce large amount of data and require powerful analytics approaches, such as Deep Learning to extract useful information. Existing IoT applications transmit the data to resource-rich data centers for analytics. However, it may congest networks, overload data centers, and increase security vulnerability. In this paper, we implement a platform, which integrates resources from data centers (servers) to end devices (IoT devices). We launch distributed analytics applications among the devices without sending everything to the data centers. We analyze challenges to implement such a platform and carefully adopt popular open- source projects to overcome the challenges. We then conduct comprehensive experiments on the implemented platform. The results show: (i) the benefits/limitations of distributed analytics, (ii) the importance of decisions on distributing an application across multiple devices, and (iii) the overhead caused by different components in our platform.
+            </p>
+					<br></br>
+        </div>
+
+        <hr></hr>
+        <br></br>
+        <div class="post">
+            <div class="date">
+                <p>
+                <span>08</span>
+                2017
+                </p>
+            </div>
+            <h3>Disseminating multi-layer multimedia content over challenged networks<span class="author">by H. Hong, T. El-Ganainy, C. Hsu, K. Harras, and M. Hefeeda</span></h3>
+            <p style="margin: 0px;">
+							Mobile devices are getting increasingly popular all over the world. Mobile users in developing countries, however, rarely have Internet access, which puts them at economic and social disadvantages compared to their counterparts in developed countries. We propose mBridge: a distributed system to disseminate multimedia content to mobile users with intermittent Internet access and opportunistic ad-hoc connectivity. By disseminating various multimedia content, such as news reports, notification messages, targeted advertisements, movie trailers, and TV shows, mBridge aims to eliminate the digital divide. We formulate an optimization problem to compute personalized distribution plans for individual mobile users, to maximize the overall user experience under various resource constraints. Our formulation jointly considers the characteristics of multimedia content, mobile users, and intermittent networks. We present an efficient distribution planning algorithm to solve our problem, and we develop several online heuristics to adapt to the system and network dynamics. We implement a prototype system and demonstrate that our algorithm outperforms the existing algorithms by up to 206%, 472% and 188% in terms of user experience, disk efficiency, and energy efficiency, respectively. In addition, we conduct trace-driven simulations to rigorously evaluate the proposed system in different environments and for large-scale deployments. Our simulation results demonstrate that the proposed algorithm substantially outperforms the closest ones in the literature in all performance measures. We believe that mBridge can allow multimedia content providers to reach out to more mobile users, and mobile users to access multimedia content without always-on Internet access.
+							&nbsp;<a href="https://www.researchgate.net/publication/319281876_Disseminating_Multi-layer_Multimedia_Content_over_Challenged_Networks">View details »</a>
+            </p>
+						<br></br>
+        </div>
+
+				<hr></hr>
+				<br></br>
+				<div class="post">
+						<div class="date">
+								<p>
+								<span>12</span>
+								2016
+								</p>
+						</div>
+						<h3>Animation rendering on multimedia fog computing platforms<span class="author">by H. Hong, J. Chuang, and C. Hsu</span></h3>
+						<p style="margin: 0px;">
+							Modern distributed multimedia applications are resource-hungry, and they often leverage on-demand cloud services to reduce their expenses. Existing cloud services deploy many servers in a few data centers, which consume a lot of electricity to power up and cold down, and thus are expensive and environmentally unfriendly. In this paper, we present a multimedia fog computing platform that utilizes resources from public crowds, edge networks, and data centers to serve distributed multimedia applications at lower costs. We use animation rendering as a case study, and identify several challenges for optimizing it on our multimedia fog computing platform. Among these challenges, we focus on the problem of predicting the completion time of each rendering job. We propose an efficient algorithm based on state-of-the-art machine learning algorithms. We also fine-tune the algorithm using multi-fold cross-validation for higher prediction accuracy. With real datasets, we conduct trace-driven simulations to quantify the performance of our prediction algorithm and that of the whole platform. The simulation results show that our proposed algorithm outperforms a state-of the-art statistical model in several aspects: completed job ratio by 20%, makespan by 2 times, and normalized deviation by 30 times, on average. Moreover, the overall performance of the platform with our proposed algorithm is fairly close to that with an Oracle of the actual job completion time: a small factor of 1.48 in terms of makespan is observed.
+							&nbsp;<a href="http://ieeexplore.ieee.org/document/7830701/">View details »</a>
+						</p>
+						<br></br>
+				</div>
+
+
+				<hr></hr>
+				<br></br>
+				<div class="post">
+						<div class="date">
+								<p>
+								<span>10</span>
+								2016
+								</p>
+						</div>
+						<h3>Dynamic module deployment in a fog computing platform<span class="author">by H. Hong, P. Tsai, and C. Hsu</span></h3>
+						<p style="margin: 0px;">
+							Several applications, such as smart cities, smart homes and smart hospitals adopt Internet of Things (IoT) networks to collect data from IoT devices. The incredible growing speed of the number of IoT devices congests the networks and the large amount of data, which are streamed to data centers for further analysis, overload the data centers. In this paper, we implement a fog computing platform that leverages end devices, edge networks, and data centers to serve the IoT applications. In this paper, we focus on implementing a fog computing platform, which dynamically pushes programs to the devices. The programs pushed to the devices pre-process the data before transmitting them over the Internet, which reduces the network traffic and the load of data centers. We survey the existing platforms and virtualization technologies, and leverage them to implement the fog computing platform. Moreover, we formulate a deployment problem of the programs. We propose an efficient heuristic deployment algorithm to solve the problem. We also implement an optimal algorithm for comparisons. We conduct experiments with a real testbed to evaluate our algorithms and fog computing platform. The proposed algorithm shows near-optimal performance, which only deviates from optimal algorithm by at most 2% in terms of satisfied requests. Moreover, the proposed algorithm runs in real-time, and is scalable. More precisely, it computes 1000 requests with 500 devices in < 2 seconds. Last, the implemented fog computing platform results in real-time deployment speed: it deploys 20 requests < 10 seconds.
+							&nbsp;<a href="http://ieeexplore.ieee.org/document/7737202/">View details »</a>
+						</p>
+
+				</div>
+
+	</div>
+	<div id="footer"></div>
+</body>
+</html>
